@@ -6,27 +6,252 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Orbitron:wght@600&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Desafio Hiring Coders - BlackFriday</title>
   </head>
   <body>
     <section class="section-one">
-      <nav>
-        <div class="container">
-          <div class="logo">HC<span class="accent">Desafio</span></div>
-        </div>
-      </nav>
-
       <div class="container">
-        <div class="left-area">
-          <h1>TESTE</h1>
+        <nav>
+          <p class="logo">HC<span class="accent">Desafio</span></p>
+        </nav>
+
+        <div class="hero-img">
+          <img src="assets/bf.gif" alt="Logotipo da BlackFriday" />
         </div>
 
-        <div class="right-area">
-          <img src="assets/bf.gif" />
-          <div class="countdown"></div>
+        <div class="hero-copy">
+          <h2>A BLACKFRIDAY ESTÁ CHEGANDO</h2>
+          <h1>
+            O MENOR PREÇO <br class="mobile-hide desktop-show" />
+            É AQUI
+          </h1>
+          <p>Cadastre seu email e receba descontos!</p>
+        </div>
+
+        <form action="#" method="POST">
+          <label for="name">Nome</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Insira seu nome"
+          />
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Insira seu email"
+          />
+          <button type="submit" value="Save" id="btn-hero">
+            quero desconto!
+          </button>
+        </form>
+
+        <div class="countdown">
+          <div class="counter">
+            <div class="day digit">
+              <div class="subtitle">Dias</div>
+            </div>
+
+            <div class="hour digit">
+              <div class="subtitle">Horas</div>
+            </div>
+
+            <div class="minute digit">
+              <div class="subtitle">Minutos</div>
+            </div>
+
+            <div class="second digit">
+              <div class="subtitle">Segundos</div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
+    <section class="section-two">
+      <div class="container">
+        <div class="title">
+          <h2>Benefícios</h2>
+          <img src="/assets/acent.svg" alt="Detalhe para destaque" />
+        </div>
+
+        <div class="bullets">
+          <div class="bullet">
+            <div class="icon">
+              <img src="./assets/Discount.png" alt="Ícone de Desconto" />
+              <div class="text">
+                <h3>Seja o primeiro da fila</h3>
+                <p>
+                  Junte-se á nossa lista de email e seja o primeiro a saber de
+                  nossos descontos.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="bullet">
+            <div class="icon">
+              <img src="./assets/Discount.png" alt="Ícone de Desconto" />
+              <div class="text">
+                <h3>Concorra a Brindes</h3>
+                <p>
+                  Concorra a prêmios e vantagens exclusivas. Não deixe de
+                  assinar nossa newsletter
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bullet">
+            <div class="icon">
+              <img src="./assets/Discount.png" alt="Ícone de Desconto" />
+              <div class="text">
+                <h3>DESCONTOS DE ATÉ 70%</h3>
+                <p>
+                  Aproveite os descontos mais quentes e os melhores produtos
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section-img">
+          <div class="large">
+            <img
+              src="/assets/shop-img.png"
+              alt="Mulher feliz com sacolas de compras"
+            />
+          </div>
+          <img src="/assets/ballons.png" alt="Balões de festa" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section-three">
+      <div class="container">
+        <div class="title">
+          <h2>FAQ</h2>
+          <img src="/assets/acent.svg" alt="Detalhe para destaque" />
+        </div>
+
+        <div class="questions">
+          <div class="faqs">
+            <a href="#faq-1-hide" id="faq-1-hide" class="hide">
+              <div class="faq-title">
+                <img src="./assets/plus.svg" alt="Sinal de Mais" />
+                <h3 class="faq-title">O que é Black Friday?</h3>
+              </div>
+            </a>
+            <a href="#faq-1-show" id="faq-1-show" class="show">
+              <div class="faq-title">
+                <img src="./assets/minus.svg" alt="Sinal de Mais" />
+                <h3 class="faq-title">O que é Black Friday?</h3>
+              </div>
+            </a>
+
+            <div class="faq-answer details">
+              <p>
+                O Black Friday é um dos principais eventos do calendário anual
+                do varejo oferecendo os melhores produtos de tecnologia a preços
+                imbatíveis! A cada edição, preparada sempre no fim de novembro,
+                milhões de visitantes acessam o e-commerce em busca das melhores
+                ofertas. A prioridade de nosso time é garantir, ano a ano, que
+                um número cada vez maior de clientes aproveitem a melhor
+                experiência de compra e máxima satisfação, do início ao fim.
+              </p>
+            </div>
+          </div>
+          <div class="faqs">
+            <a href="#faq-2-hide" id="faq-2-hide" class="hide">
+              <div class="faq-title">
+                <img src="./assets/plus.svg" alt="Sinal de Mais" />
+                <h3 class="faq-title">Quando é a Black Friday?</h3>
+              </div>
+            </a>
+            <a href="#faq-2-show" id="faq-2-show" class="show">
+              <div class="faq-title">
+                <img src="./assets/minus.svg" alt="Sinal de Mais" />
+                <h3 class="faq-title">Quando é a Black Friday?</h3>
+              </div>
+            </a>
+
+            <div class="faq-answer details">
+              <p>
+                O Black Friday do HCDesafio! começa dia 25 de novembro, às 19
+                horas e vai até dia 26 de novembro, às 23h59.
+              </p>
+            </div>
+          </div>
+          <div class="faqs">
+            <a href="#faq-3-hide" id="faq-3-hide" class="hide">
+              <div class="faq-title">
+                <img src="./assets/plus.svg" alt="Sinal de Mais" />
+                <h3 class="faq-title">O HCDesafio é confiável?</h3>
+              </div>
+            </a>
+            <a href="#faq-3-show" id="faq-3-show" class="show">
+              <div class="faq-title">
+                <img src="./assets/minus.svg" alt="Sinal de Mais" />
+                <h3 class="faq-title">O HCDesafio é confiável?</h3>
+              </div>
+            </a>
+
+            <div class="faq-answer details">
+              <p>
+                Durante o Black Friday ou qualquer época do ano, o HCDesafio!
+                apresenta aos clientes uma plataforma altamente segura e
+                confiável. Somos, também, considerados um site blindado, a
+                partir de auditorias constantes, e validados como site seguro,
+                pelo Google. Portanto, faça suas compras com tranquilidade!
+              </p>
+            </div>
+          </div>
+          <div class="faqs">
+            <a href="#faq-4-hide" id="faq-4-hide" class="hide">
+              <div class="faq-title">
+                <img src="./assets/plus.svg" alt="Sinal de Mais" />
+                <h3 class="faq-title">Como aproveitar as ofertas ?</h3>
+              </div>
+            </a>
+            <a href="#faq-4-show" id="faq-4-show" class="show">
+              <div class="faq-title">
+                <img src="./assets/minus.svg" alt="Sinal de Mais" />
+                <h3 class="faq-title">Como aproveitar as ofertas ?</h3>
+              </div>
+            </a>
+
+            <div class="faq-answer details">
+              <p>
+                A cada ano, preparamos uma edição histórica aos clientes, com os
+                melhores descontos e um estoque recorde em produtos de
+                tecnologia, linha gamer, hardware, smartphones e eletrônicos.
+                Mas, fique ligado! Enviamos ofertas exclusivas para nossa lista
+                de email, não deixe de se cadastrar!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="logo-wrapper">
+          <p class="logo">HC<span class="accent">Desafio</span></p>
+        </div>
+        <div class="disclaimer">
+          <p>Desafio Black Friday Hiring Coders</p>
+        </div>
+        <div class="author">
+          <p>Autor: Daniel Lins Toqueiro</p>
+        </div>
+      </div>
+    </footer>
+
     <script src="build/script.js"></script>
   </body>
 </html>
