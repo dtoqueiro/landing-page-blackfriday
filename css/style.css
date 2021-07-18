@@ -475,7 +475,7 @@ footer .author p {
 
   .section-one .container {
     grid-template-columns: 7% 1fr 1fr 7%;
-    grid-template-rows: 5% 1fr 2.7fr 0.9fr 10%;
+    grid-template-rows: 5% 1fr 2.7fr 0.9fr 1%;
     gap: 0px 2rem;
     grid-template-areas:
       "Header Header Header Header"
