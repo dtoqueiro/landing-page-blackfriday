@@ -1,11 +1,11 @@
 /**
  * BUTTON PREVENT DEFAULT
  */
-let btn = document.getElementById("btn-hero");
+// let btn = document.getElementById("btn-hero");
 
-btn?.addEventListener("click", (e) => {
-  e.preventDefault();
-});
+// btn?.addEventListener("click", (e) => {
+//   e.preventDefault();
+// });
 
 /**
  * LÓGICA DO COUNTDOWN
@@ -78,3 +78,46 @@ refreshCount();
 /**
  * COUNTDOWN FIM
  */
+
+/**
+ * FORMULÁRIO DE EMAIL
+ */
+const form = document.getElementById("email-form");
+const nameForm = document.getElementById("name") as HTMLInputElement | null;
+const emailForm = document.getElementById("email") as HTMLInputElement | null;
+
+const nameError = document.getElementById("name-error") as HTMLInputElement;
+
+const emailError = document.getElementById("email-error") as HTMLInputElement;
+
+const modal = document.getElementById("modal-success") as HTMLInputElement;
+
+form?.addEventListener("submit", (e) => {
+  e.preventDefault();
+  nameError.innerText = "";
+  emailError.innerText = "";
+  let nome = nameForm?.value;
+  let email = emailForm?.value;
+  if (nome === "") {
+    nameError.innerText = "O Nome é obrigatório";
+  } else if (email === "") {
+    emailError.innerText = "O Email é obrigatório";
+  } else {
+    let data = {
+      nome,
+      email,
+    };
+    let convertData = JSON.stringify(data);
+    localStorage.setItem("lead", convertData);
+    modal.style.display = "block";
+  }
+});
+
+/**
+ * Botão OK do MODAL
+ */
+const modalBtn = document.getElementById("btn-modal") as HTMLInputElement;
+
+modalBtn.addEventListener("click", () => {
+  modal.style.display = "none";
+});

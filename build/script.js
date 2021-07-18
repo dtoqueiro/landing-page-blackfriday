@@ -2,10 +2,7 @@
 /**
  * BUTTON PREVENT DEFAULT
  */
-let btn = document.getElementById("btn-hero");
-btn === null || btn === void 0 ? void 0 : btn.addEventListener("click", (e) => {
-    e.preventDefault();
-});
+// let btn = document.getElementById("btn-hero");
 function timeUntilBlackFriday() {
     const currentDate = new Date();
     const blackFriday = new Date(`Nov 26 2021`);
@@ -55,3 +52,41 @@ refreshCount();
 /**
  * COUNTDOWN FIM
  */
+/**
+ * FORMULÁRIO DE EMAIL
+ */
+const form = document.getElementById("email-form");
+const nameForm = document.getElementById("name");
+const emailForm = document.getElementById("email");
+const nameError = document.getElementById("name-error");
+const emailError = document.getElementById("email-error");
+const modal = document.getElementById("modal-success");
+form === null || form === void 0 ? void 0 : form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    nameError.innerText = "";
+    emailError.innerText = "";
+    let nome = nameForm === null || nameForm === void 0 ? void 0 : nameForm.value;
+    let email = emailForm === null || emailForm === void 0 ? void 0 : emailForm.value;
+    if (nome === "") {
+        nameError.innerText = "O Nome é obrigatório";
+    }
+    else if (email === "") {
+        emailError.innerText = "O Email é obrigatório";
+    }
+    else {
+        let data = {
+            nome,
+            email,
+        };
+        let convertData = JSON.stringify(data);
+        localStorage.setItem("lead", convertData);
+        modal.style.display = "block";
+    }
+});
+/**
+ * Botão OK do MODAL
+ */
+const modalBtn = document.getElementById("btn-modal");
+modalBtn.addEventListener("click", () => {
+    modal.style.display = "none";
+});

@@ -15,6 +15,13 @@
     <title>Desafio Hiring Coders - BlackFriday</title>
   </head>
   <body>
+    <div class="modal" id="modal-success">
+      <div class="content">
+        <h2>Cadastrado realizado com sucesso</h2>
+        <img src="./assets/sucesso.gif" alt="Sucesso" />
+        <button id="btn-modal">OK</button>
+      </div>
+    </div>
     <section class="section-one">
       <div class="container">
         <nav>
@@ -34,7 +41,7 @@
           <p>Cadastre seu email e receba descontos!</p>
         </div>
 
-        <form action="#" method="POST">
+        <form action="#" method="POST" id="email-form">
           <label for="name">Nome</label>
           <input
             type="text"
@@ -42,6 +49,7 @@
             name="name"
             placeholder="Insira seu nome"
           />
+          <p id="name-error"></p>
           <label for="email">Email</label>
           <input
             type="email"
@@ -49,6 +57,7 @@
             name="email"
             placeholder="Insira seu email"
           />
+          <p id="email-error"></p>
           <button type="submit" value="Save" id="btn-hero">
             quero desconto!
           </button>

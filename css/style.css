@@ -20,6 +20,53 @@ section {
   height: 100vh;
   width: 100%;
 }
+#modal-success {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.modal .content {
+  width: 40vw;
+  min-height: 40vh;
+  margin: 10% auto;
+  background-color: #fff;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.modal .content h2 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.modal .content img {
+  height: 10rem;
+  margin: 1rem;
+}
+.modal .content button {
+  width: 7rem;
+  height: 2.5rem;
+  margin: 2rem;
+  border: none;
+  background-color: #49cc85;
+  color: #fff;
+  font-size: 1.5rem;
+  border-radius: 2rem;
+  box-shadow: 5px 5px 11px 1px rgba(0, 0, 0, 0.2);
+  transition: all ease 0.3s;
+}
+.modal .content button:hover {
+  background-color: #31b36b;
+}
 
 /*SECTION ONE*/
 .section-one {
@@ -125,6 +172,11 @@ nav .logo span {
   background-color: #fff;
   margin-bottom: 1rem;
   transition: all ease 0.35s;
+  font-size: 1.5rem;
+}
+.section-one form p {
+  color: #de4848;
+  font-size: 1.5rem;
 }
 
 .section-one input:focus {
